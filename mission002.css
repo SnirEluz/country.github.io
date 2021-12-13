@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Outfit;
+  font-weight: 400;
+}
+
+.mainContainer {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #030018;
+}
+
+.mainContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  height: 95%;
+  width: 95%;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.mainContainer .container .boxSerch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.mainContainer .container .boxSerch input {
+  width: 190px;
+  height: 30px;
+  border: none;
+  border: 1px solid blue;
+  font-size: 17px;
+  border-radius: 3px;
+}
+
+.mainContainer .container .boxSerch button {
+  margin-left: 7.5px;
+  min-width: 20vw;
+  width: auto;
+  height: 30px;
+  border: none;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.mainContainer .container .boxSerch button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.mainContainer .container .summery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  height: 80px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.mainContainer .container .summery h1 {
+  padding-left: 20px;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 3px;
+}
+
+.mainContainer .container .mainCountriesDiv {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.795) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.795) 0px 8px 24px;
+  overflow: auto;
+}
+
+.mainContainer .container .mainCountriesDiv .headerCountriesDiv {
+  background-color: white;
+  height: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.mainContainer .container .mainCountriesDiv .headerCountriesDiv h1 {
+  font-size: 14px;
+}
+
+.mainContainer .container .mainCountriesDiv .headerCountriesDiv .headerCountriesDivLeft {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .container .mainCountriesDiv .headerCountriesDiv .headerCountriesDivRight {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .container .mainCountriesDiv .citizensCountriesDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.mainContainer .container .mainCountriesDiv .citizensCountriesDiv .citizensCountriesDivLeft {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .container .mainCountriesDiv .citizensCountriesDiv .citizensCountriesDivLeft h1 {
+  font-size: 15px;
+}
+
+.mainContainer .container .mainCountriesDiv .citizensCountriesDiv .citizensCountriesDivRight {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .container .mainCountriesDiv .citizensCountriesDiv .citizensCountriesDivRight h1 {
+  font-size: 15px;
+}
+
+.mainContainer .container .mainNumbersCountriesDivMain {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.mainContainer .container .mainNumbersCountriesDivMain .headerNumbersCountriesDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.mainContainer .container .mainNumbersCountriesDivMain .headerNumbersCountriesDiv h1 {
+  font-size: 18px;
+}
+
+.mainContainer .container .mainNumbersCountriesDivMain .headerNumbersCountriesDiv .headerNumbersCountriesDivLeft {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .container .mainNumbersCountriesDivMain .headerNumbersCountriesDiv .headerNumbersCountriesDivLeft {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .container .mainNumbersCountriesDivMain .numbersNumbersCountriesDiv .numbersNumbersCountriesSubDiv {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 13px;
+  margin-bottom: 10px;
+  height: 27px;
+  border-left: 2px solid black;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.mainContainer .container .mainNumbersCountriesDivMain .numbersNumbersCountriesDiv .numbersNumbersCountriesSubDiv h1 {
+  font-size: 18px;
+}
+
+.mainContainer .container .mainNumbersCountriesDivMain .numbersNumbersCountriesDiv .numbersNumbersCountriesSubDiv .numbersCountriesDivLeft {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .container .mainNumbersCountriesDivMain .numbersNumbersCountriesDiv .numbersNumbersCountriesSubDiv .numbersCountriesDivRight {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .mainContainer .container .boxSerch {
+    width: 105%;
+    padding: 0;
+  }
+  .mainContainer .container .boxSerch input {
+    width: 190px;
+    height: 30px;
+    border: none;
+    border: 1px solid blue;
+    font-size: 17px;
+    border-radius: 3px;
+  }
+  .mainContainer .container .boxSerch button {
+    font-size: 11px;
+  }
+  .mainContainer .container .boxSerch button:hover {
+    background-color: blue;
+    color: white;
+  }
+  .mainContainer .container .mainCountriesDiv {
+    -webkit-box-shadow: rgba(149, 157, 165, 0.199) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.199) 0px 8px 24px;
+  }
+  .mainContainer .container .mainCountriesDiv .citizensCountriesDiv .citizensCountriesDivLeft h1, .mainContainer .container .mainCountriesDiv .citizensCountriesDiv .citizensCountriesDivRight h1 {
+    font-size: 13px;
+  }
+  .mainContainer .container .mainNumbersCountriesDivMain .headerNumbersCountriesDiv h1 {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=mission002.css.map */

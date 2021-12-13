@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+    font-weight: 400;
+}
+.mainContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(3, 0, 24);
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        height: 95%;
+        width: 95%;
+        max-width: 700px;
+        border-radius: 10px;
+        padding: 10px;
+
+        .boxSerch {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            height: 50px;
+            width: 100%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            input {
+                width: 190px;
+                height: 30px;
+                border: none;
+                border: 1px solid blue;
+                font-size: 17px;
+                border-radius: 3px;
+            }
+            button {
+                margin-left: 7.5px;
+                min-width: 20vw;
+                width: auto;
+                height: 30px;
+                border: none;
+                background-color: rgb(238, 238, 238);
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: blue;
+                color: white;
+            }
+        }
+        .summery {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 10px;
+            width: 100%;
+            border-radius: 5px;
+            height: 80px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            h1 {
+                padding-left: 20px;
+                font-size: 13px;
+                font-weight: 300;
+                margin: 3px;
+            }
+        }
+        .mainCountriesDiv {
+            position: relative;
+            height: 350px;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: rgba(149, 157, 165, 0.795) 0px 8px 24px;
+            overflow: auto;
+            .headerCountriesDiv {
+                background-color: white;
+                height: 40px;
+                position: sticky;
+                top: 0;
+                display: flex;
+                padding: 10px;
+                h1 {
+                    font-size: 14px;
+                }
+                .headerCountriesDivLeft {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                }
+                .headerCountriesDivRight {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .citizensCountriesDiv {
+                display: flex;
+                padding: 10px;
+                margin: 5px;
+                border-bottom: 1px solid rgb(229, 229, 229);
+                // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                .citizensCountriesDivLeft {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    h1 {
+                        font-size: 15px;
+                    }
+                }
+                .citizensCountriesDivRight {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    h1 {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .mainNumbersCountriesDivMain {
+            height: 200px;
+            width: 100%;
+            margin-bottom: 5px;
+            .headerNumbersCountriesDiv {
+                display: flex;
+                padding: 10px;
+                h1 {
+                    font-size: 18px;
+                }
+                .headerNumbersCountriesDivLeft {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                }
+                .headerNumbersCountriesDivLeft {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .numbersNumbersCountriesDiv {
+                .numbersNumbersCountriesSubDiv {
+                    border-radius: 5px;
+                    display: flex;
+                    padding: 13px;
+                    margin-bottom: 10px;
+                    height: 27px;
+                    border-left: 2px solid black;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    h1 {
+                        font-size: 18px;
+                    }
+                    .numbersCountriesDivLeft {
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .numbersCountriesDivRight {
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .mainContainer {
+        .container {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+            .boxSerch {
+                width: 105%;
+                padding: 0;
+                input {
+                    width: 190px;
+                    height: 30px;
+                    border: none;
+                    border: 1px solid blue;
+                    font-size: 17px;
+                    border-radius: 3px;
+                }
+                button {
+                    font-size: 11px;
+                }
+                button:hover {
+                    background-color: blue;
+                    color: white;
+                }
+            }
+            .mainCountriesDiv{
+                box-shadow: rgba(149, 157, 165, 0.199) 0px 8px 24px;
+                .citizensCountriesDiv{
+                    .citizensCountriesDivLeft,.citizensCountriesDivRight{
+                        h1{
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+            }
+            .mainNumbersCountriesDivMain {
+                .headerNumbersCountriesDiv {
+                    h1 {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
